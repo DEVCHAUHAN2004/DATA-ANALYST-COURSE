@@ -1,0 +1,58 @@
+--select * from Sales.Employees
+
+
+--WITH cte AS (
+--    SELECT *
+--    FROM Sales.Employees
+--    WHERE Department = 'Sales'
+--)
+--SELECT *
+--FROM cte
+
+--WITH HighSalary AS (
+--    SELECT *
+--    FROM Sales.Employees
+--    WHERE Salary > 60000
+--)
+--SELECT FirstName, LastName, Salary
+--FROM HighSalary;
+
+--WITH DepartmentCount AS (
+--    SELECT
+--        Department,
+--        COUNT(*) AS EmployeeCount
+--    FROM Sales.Employees
+--    GROUP BY Department
+--)
+--SELECT *
+--FROM DepartmentCount;
+
+
+
+
+--WITH ManagedEmployees AS (
+--    SELECT *
+--    FROM Sales.Employees
+--    WHERE ManagerID IS NOT NULL
+--)
+--SELECT
+--    FirstName,
+--    LastName,
+--    ManagerID
+--FROM ManagedEmployees;
+
+
+--WITH EmployeeRanking AS (
+--    SELECT
+--        FirstName,
+--        LastName,
+--        Department,
+--        Salary,
+--        ROW_NUMBER() OVER (PARTITION BY Department ORDER BY Salary ) AS RowNum,
+--        RANK() OVER (PARTITION BY Department ORDER BY Salary ) AS Rank,
+--        DENSE_RANK() OVER (PARTITION BY  Department ORDER BY Salary ) AS DenseRank
+
+--    FROM Sales.Employees
+--)
+--SELECT *
+--FROM EmployeeRanking;

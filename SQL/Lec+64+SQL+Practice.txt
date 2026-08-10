@@ -1,0 +1,21 @@
+--CREATE PROCEDURE GetEmployees
+--AS
+--BEGIN
+--    SELECT *
+--    FROM Sales.Employees;
+--END;
+
+--EXEC GetEmployees;
+
+
+--CREATE PROCEDURE GetHighSalaryEmployees
+--AS
+--BEGIN
+--    SELECT
+--        FirstName,
+--        LastName,
+--        Department,
+--        Salary
+--    FROM Sales.Employees
+--    WHERE Salary > 60000;
+--END;

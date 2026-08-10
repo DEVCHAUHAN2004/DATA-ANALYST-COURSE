@@ -1,0 +1,17 @@
+--WITH MarketingEmployees AS (
+--    SELECT FirstName, LastName, Salary
+--    FROM Sales.Employees
+--    WHERE Department = 'Marketing'
+--),
+--SalesEmployees AS (
+--    SELECT FirstName, LastName, Salary
+--    FROM Sales.Employees
+--    WHERE Department = 'Sales'
+--)
+--SELECT * FROM MarketingEmployees
+
+--UNION ALL
+
+--SELECT * FROM SalesEmployees;
+
+
